@@ -1,5 +1,6 @@
 *{
   margin: 0;
+  padding: 0;
 }
 
 .wrapper {
@@ -9,21 +10,33 @@
   color: #fff;
   position: relative;
 }
+.SectionContent{
+  margin-left: 30%;
+  margin-top: 15%;
+  margin-right: 3%;
+}
+
+.SectionContent mark {
+  
+  color: white;
+  background:rgba(0, 0, 0, 0.3)
+}
 
 section {
   height: 110vh;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 100;
   background-color: #136997;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 section:nth-child(1) {
   background: rgb(0, 0, 0);
 }
 section:nth-child(2) {
   width: 100%;
+  /* linear-gradient:(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./image/intro.jpg"); */
   background-image: url("./image/intro.jpg");
   background-size: cover;
   background-position: relative;
@@ -36,27 +49,52 @@ section:nth-child(3) {
 }
 section:nth-child(4) {
   width: 100%;
-  background-image: url("./image/Pyramid.jpg");
+  background-image: url("./image/Pyramid3.jpg");
   background-size: cover;
   background-position: relative;
 }
 section:nth-child(5) {
-  background: #9B59B6;
+  width: 100%;
+  background-image: url("./image/China4.jpg");
+  background-size: cover;
+  background-position: relative;
 }
 section:nth-child(6) {
-  background: #03C9A9;
+  width: 100%;
+  background-image: url("./image/Greek1.jpg");
+  background-size: cover;
+  background-position: relative;
 }
 section:nth-child(7) {
-  background: #ffcc00;
+  width: 100%;
+  background-image: url("./image/medieval.jpg");
+  background-size: cover;
+  background-position: relative;
 }
 section:nth-child(8) {
-  background: rgb(135, 27, 27);
+  width: 100%;
+  background-image: url("./image/16th.jpg");
+  background-size: cover;
+  background-position: relative;
 }
 section:nth-child(9) {
-  background: #5637a0;
+  width: 100%;
+  background-image: url("./image/19th.jpg");
+  background-size: cover;
+  background-position: relative;
 }
 section:nth-child(10) {
-  background-image: #8a2446
+  width: 100%;
+  background-image: url("./image/20th.jpg");
+  background-size: cover;
+  background-position: relative;
+}
+
+section:nth-child(11) {
+  width: 100%;
+  background-image: url("./image/21st.jpg");
+  background-size: cover;
+  background-position: relative;
 }
 .nav__wrapper {
   position: fixed;
@@ -97,6 +135,7 @@ section:nth-child(10) {
   position: relative;
   transition: all 0.3s ease-out;
   margin-bottom: 1em;
+  overflow: visible;
 }
 .nav li:after {
   content: "";
@@ -125,6 +164,7 @@ section:nth-child(10) {
 .nav li.active {
   pointer-events: none;
   padding-left: 1em;
+  background: rgba(0, 0, 0, 0.3);
 }
 .nav li.active:after {
   width: 35px;
