@@ -13,3 +13,19 @@ $('a[href*=#]:not([href=#])').click(function() {
       }
   }
 });
+function reveal() {
+  var reveals = document.querySelectorAll(".SectionContent");
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.remove("animate__fadeOut");
+      reveals[i].classList.add("animate__fadeIn");
+    } else {
+      reveals[i].classList.remove("animate__fadeIn");
+      reveals[i].classList.add("animate__fadeOut");
+    }
+  }
+}
+window.addEventListener("scroll", reveal);
