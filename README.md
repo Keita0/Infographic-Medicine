@@ -1,1 +1,1 @@
-# Infographic-Medicine
+# History of Medicine
