@@ -4,7 +4,7 @@
 }
 
 .wrapper {
-  min-height: 100vh;
+  min-height: 105vh;
   font-family: "Roboto Slab", serif;
   font-weight: 300;
   color: #fff;
@@ -14,6 +14,7 @@
   margin-left: 30%;
   margin-top: 15%;
   margin-right: 3%;
+  text-align: justify;
 }
 
 .SectionContent mark {
@@ -49,19 +50,19 @@ section:nth-child(3) {
 }
 section:nth-child(4) {
   width: 100%;
-  background-image: url("./image/Pyramid3.jpg");
+  background-image: url("./image/eqypt.jpg");
   background-size: cover;
   background-position: relative;
 }
 section:nth-child(5) {
   width: 100%;
-  background-image: url("./image/China4.jpg");
+  background-image: url("./image/China3.jpg");
   background-size: cover;
   background-position: relative;
 }
 section:nth-child(6) {
   width: 100%;
-  background-image: url("./image/Greek1.jpg");
+  background-image: url("./image/Greek.jpg");
   background-size: cover;
   background-position: relative;
 }
@@ -79,23 +80,38 @@ section:nth-child(8) {
 }
 section:nth-child(9) {
   width: 100%;
-  background-image: url("./image/19th.jpg");
+  background-image: url("./image/17th.jpg");
   background-size: cover;
   background-position: relative;
 }
 section:nth-child(10) {
   width: 100%;
-  background-image: url("./image/20th.jpg");
+  background-image: url("./image/18th.jpg");
   background-size: cover;
   background-position: relative;
 }
 
 section:nth-child(11) {
   width: 100%;
+  background-image: url("./image/19th.jpg");
+  background-size: cover;
+  background-position: relative;
+}
+
+section:nth-child(12) {
+  width: 100%;
+  background-image: url("./image/20th.jpg");
+  background-size: cover;
+  background-position: relative;
+}
+
+section:nth-child(13) {
+  width: 100%;
   background-image: url("./image/21st.jpg");
   background-size: cover;
   background-position: relative;
 }
+
 .nav__wrapper {
   position: fixed;
   height: 100%;
@@ -105,7 +121,7 @@ section:nth-child(11) {
   justify-content: flex-end;
 }
 .nav {
-  margin: 0 0 100px 30px;
+  margin: 0 0 90px 30px;
 }
 .nav__counter {
   font-size: 24px;
@@ -164,10 +180,11 @@ section:nth-child(11) {
 .nav li.active {
   pointer-events: none;
   padding-left: 1em;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.35);
+  padding-bottom: 5px;
 }
 .nav li.active:after {
-  width: 35px;
+  width: 40px;
   height: 400px;
   top: 35px;
 }
